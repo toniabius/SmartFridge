@@ -1,0 +1,40 @@
+div.inventory-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -200px;
+    height: 300px;
+    width: 400px;
+}
+
+#inventory {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+div.table-body {
+    overflow-y: scroll;
+    height: 275px;
+}
+
+td {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td.food {
+    width: 300px;
+    border-top: 1px solid black;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+td.qty {
+    width: 100px;
+    border-top: 1px solid black;
+    font-size: 25px;
+    text-align: center;
+}
