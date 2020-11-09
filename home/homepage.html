@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" type="text/css" href="../keyboard/jQKeyboard.css" />
+    <link rel="stylesheet" type="text/css" href="../keyboard/keyin.css" />
+    <link rel="stylesheet" type="text/css" href="../home/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../home/inventorytable.css" />
+
+    <script
+      type="text/javascript"
+      src="../keyboard/jquery-2.1.4.min.js"
+    ></script>
+    <script type="text/javascript" src="../keyboard/jQKeyboard.js"></script>
+    <script type="text/javascript" src="../keyboard/keyboardfunc.js"></script>
+    <script type="text/javascript" src="../keyboard/keyin.js"></script>
+    <script type="text/javascript" src="../home/nav.js"></script>
+    <script>
+      var foodmap = newMap();
+      function add() {
+        foodmap.set(
+          document.getElementById("foodinput"),
+          document.getElementById("quantityinput")
+        );
+      }
+      function remove() {
+        foodmap.delete(
+          document.getElementById("foodinput"),
+          document.getElementById("quantityinput")
+        );
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="inventory-container">
+      <h1 id="inventory">Inventory</h1>
+      <div class="table-body">
+        <table>
+          <tbody>
+            <tr>
+              <td class="food">Spinach</td>
+              <td class="qty">1</td>
+            </tr>
+            <tr>
+              <td class="food">Avocado</td>
+              <td class="qty">3</td>
+            </tr>
+            <tr>
+              <td class="food">Porkchop</td>
+              <td class="qty">3</td>
+            </tr>
+            <tr>
+              <td class="food">Grapes</td>
+              <td class="qty">2</td>
+            </tr>
+            <tr>
+              <td class="food">Eggs</td>
+              <td class="qty">12</td>
+            </tr>
+            <tr>
+              <td class="food">OJ</td>
+              <td class="qty">1</td>
+            </tr>
+            <tr>
+              <td class="food">Milk</td>
+              <td class="qty">1</td>
+            </tr>
+            <tr>
+              <td class="food">a</td>
+              <td class="qty">3</td>
+            </tr>
+            <tr>
+              <td class="food">b</td>
+              <td class="qty">2</td>
+            </tr>
+            <tr>
+              <td class="food">c</td>
+              <td class="qty">1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <form action="PayslipServlet" method="get">
+      <div class="foodinputbox">
+        <input
+          type="text"
+          id="foodinput"
+          class="jQKeyboard"
+          placeholder="Food"
+        />
+      </div>
+      <div class="quantityinputbox">
+        <input
+          type="text"
+          id="quantityinput"
+          class="jQKeyboard"
+          placeholder="Quantity"
+        />
+      </div>
+      <input
+        type="button"
+        class="button addbutton"
+        value="ADD"
+        onClick="add()"
+      />
+      <input
+        type="button"
+        class="button removebutton"
+        value="REMOVE"
+        onClick="remove()"
+      />
+    </form>
+
+    <form>
+      <input
+        type="button"
+        class="button backNav"
+        value="BACK"
+        onclick="back()"
+      />
+      <input
+        type="button"
+        class="button homeNav"
+        value="HOME"
+        onclick="openHome()"
+      />
+      <input
+        type="button"
+        class="button orderNav"
+        value="ORDER"
+        onclick="openOrder()"
+      />
+      <input
+        type="button"
+        class="button recipeNav"
+        value="RECIPE"
+        onclick="openRecipe()"
+      />
+      <input
+        type="button"
+        class="button settingNav"
+        value="SETTING"
+        onclick="openSetting()"
+      />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>RECIPE</title>
+
+    <link rel="stylesheet" type="text/css" href="../home/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../recipe/recipe.css" />
+
+    <script type="text/javascript" src="../home/nav.js"></script>
+    <script type="text/javascript" src="../recipe/recipe.js"></script>
+  </head>
+
+  <body>
+    <div class="recipe-container">
+      <h1 id="recipe">Vegan Sweet Potato Soup</h1>
+      <div class="recipe-body">
+        <h5 id="time">Prep:10 mins  Cook:15 mins  Total:25 mins</h2>
+        <h5 id="difficulty">Difficulty: Easy</h2>
+      </div>
+      <div class="left">
+        <h2 id="ingredient">Ingredients</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td class="food">3 cups chopped fresh spinach</td>
+              </tr>
+              <tr>
+                <td class="food">2 ½ cups cooked and mashed sweet potatoes</td>
+              </tr>
+              <tr>
+                <td class="food">2 cups great northern beans</td>
+              </tr>
+              <tr>
+                <td class="food">1 ½ cups almond milk</td>
+              </tr>
+              <tr>
+                <td class="food">1 cup diced onion</td>
+              </tr>
+              <tr>
+                <td class="food">½ teaspoon ground ginger</td>
+              </tr>
+              <tr>
+                <td class="food">salt and ground black pepper to taste</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      <div class="right">
+        <h2 id="direction">Directions</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td class="step">1. Combine spinach, sweet potato, beans, almond milk, onion, ginger, salt, and pepper in a medium pot; stir until combined. Bring to a boil.
+                </td>
+              </tr>
+              <tr>
+                <td class="food">2. Reduce heat to a simmer and cook, covered, until spinach is wilted, 10 to 15 minutes. Serve immediately.</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+
+    <form>
+      <input
+        type="button"
+        class="button backNav"
+        value="BACK"
+        onclick="back()"
+      />
+      <input
+        type="button"
+        class="button homeNav"
+        value="HOME"
+        onclick="openHome()"
+      />
+      <input
+        type="button"
+        class="button orderNav"
+        value="ORDER"
+        onclick="openOrder()"
+      />
+      <input
+        type="button"
+        class="button recipeNav"
+        value="RECIPE"
+        onclick="openRecipe()"
+      />
+      <input
+        type="button"
+        class="button settingNav"
+        value="SETTING"
+        onclick="openSetting()"
+      />
+    </form>
+  </body>
+</html>

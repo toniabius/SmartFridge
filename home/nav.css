@@ -1,0 +1,97 @@
+.button {
+    background-color: #88b6e0;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+
+  .addbutton {
+    background-color: white;
+    color: black;
+    border: 2px solid #88b6e0;
+    position: fixed;
+    bottom: 15%;
+    left: 25%;
+  }
+
+  .addbutton:hover {
+    background-color: #88b6e0;
+    color: white;
+  }
+
+  .removebutton {
+    background-color: white;
+    color: black;
+    border: 2px solid #88b6e0;
+    position: fixed;
+    bottom: 15%;
+    right: 25%;
+  }
+
+  .removebutton:hover {
+    background-color: #88b6e0;
+    color: white;
+  }
+
+  .backNav {
+    background-color: #f3f7fa;
+    color: black;
+    border: 2px solid #88b6e0;
+    position: fixed;
+    bottom: 5%;
+    left: 15%;
+  }
+
+  .homeNav {
+    background-color: #f3f7fa;
+    color: black;
+    border: 2px solid #88b6e0;
+    position: fixed;
+    bottom: 5%;
+    left: 45%;
+  }
+
+  .recipeNav {
+    background-color: #f3f7fa;
+    color: black;
+    border: 2px solid #88b6e0;
+    position: fixed;
+    bottom: 5%;
+    left: 30%;
+  }
+
+  .orderNav {
+    background-color: #f3f7fa;
+    color: black;
+    border: 2px solid #88b6e0;
+    position: fixed;
+    bottom: 5%;
+    left: 60%;
+  }
+
+  .settingNav {
+    background-color: #f3f7fa;
+    color: black;
+    border: 2px solid #88b6e0;
+    position: fixed;
+    bottom: 5%;
+    left: 75%;
+  }
+
+  div.foodinputbox {
+    position: fixed;
+    bottom: 25%;
+    left: 20%;
+  }
+  div.quantityinputbox {
+    position: fixed;
+    bottom: 25%;
+    right: 20%;
+  }
