@@ -2,7 +2,7 @@ body {
   background: #daedf5;
 }
 
-div.recipe-container {
+div.list-container {
   position: fixed;
   top: 40%;
   left: 50%;

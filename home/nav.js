@@ -16,3 +16,6 @@
       function openGroceryList() {
         window.open("../")
       }
+      function checkout(){
+        window.open("../order/checkout.html","_self");
+      }
