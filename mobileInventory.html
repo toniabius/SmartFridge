@@ -5,14 +5,16 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<div class="container well">
+		<div id="1212" class="container well">
 			<h1 class="text-center">Inventory: Mobile Version</h1>
-
 			<a href="#" class="list-group-item list-group-item-action">
 				<div class="d-flex w-100 justify-content-between">
 				  <h5 class="mb-1">Microwave Taquitos</h5>
-
-				  <small>3 days ago &nbsp&nbsp  <button type="button" class="btn btn-light">Reorder</button></small>
+				  <small class="text-muted">
+				  	3 days ago &nbsp&nbsp  
+				  	<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+				  	<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+				  </small>
 				</div>
 				<p class="mb-1">A taquito, tacos dorados, rolled taco, or flauta is a Mexican food dish that typically consists of a small rolled-up tortilla that contains filling, including beef, cheese or chicken. The filled tortilla is then crisp-fried or deep-fried.</p>
 				<small>Quanity: 50 servings, Calories: 90</small>
@@ -20,7 +22,11 @@
 			<a href="#" class="list-group-item list-group-item-action">
 				<div class="d-flex w-100 justify-content-between">
 				  <h5 class="mb-1">Watermelon</h5>
-				  <small class="text-muted">3 days ago &nbsp&nbsp  <button type="button" class="btn btn-light">Reorder</button></small>
+					  <small class="text-muted">
+				  	3 days ago &nbsp&nbsp  
+				  	<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+				  	<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+				  </small>
 				</div>
 				<p class="mb-1">Watermelon is a plant species in the family Cucurbitaceae, a vine-like flowering plant originally domesticated in Africa. It is a highly cultivated fruit worldwide, having more than 1,000 varieties. Watermelon is a scrambling and trailing vine in the flowering plant family Cucurbitaceae</p>
 				<small class="text-muted">Quantity: 80 servings, Calories: 30</small>
@@ -28,7 +34,11 @@
 			<a href="#" class="list-group-item list-group-item-action">
 				<div class="d-flex w-100 justify-content-between">
 				  <h5 class="mb-1">Coconut Water LocoFoco</h5>
-				  <small class="text-muted">6 days ago &nbsp&nbsp  <button type="button" class="btn btn-light">Reorder</button></small>
+				  <small class="text-muted">
+				  	3 days ago &nbsp&nbsp  
+				  	<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+				  	<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+				  </small>
 				</div>
 				<p class="mb-1">Coconut water, less commonly known as coconut juice, is the clear liquid inside coconuts. In early development, it serves as a suspension for the endosperm of the coconut during the nuclear phase of development</p>
 				<small class="text-muted">Quantity: 80 servings, Calories: 30</small>
@@ -36,7 +46,11 @@
 			<a href="#" class="list-group-item list-group-item-action">
 				<div class="d-flex w-100 justify-content-between">
 				  <h5 class="mb-1">Kale Organic Greens</h5>
-				  <small class="text-muted">4 days ago &nbsp&nbsp  <button type="button" class="btn btn-light">Reorder</button></small>
+				  <small class="text-muted">
+				  	3 days ago &nbsp&nbsp  
+				  	<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+				  	<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+				  </small>
 				</div>
 				<p class="mb-1">Kale, or leaf cabbage, belongs to a group of cabbage cultivars grown for their edible leaves, although some are used as ornamentals. Kale plants have green or purple leaves, and the central leaves do not form a head</p>
 				<small class="text-muted">Quantity: 80 servings, Calories: 30</small>
@@ -44,7 +58,11 @@
 			<a href="#" class="list-group-item list-group-item-action">
 				<div class="d-flex w-100 justify-content-between">
 				  <h5 class="mb-1">Cincinatti Chili mac</h5>
-				  <small class="text-muted">3 days ago &nbsp&nbsp  <button type="button" class="btn btn-light">Reorder</button></small>
+				  <small class="text-muted">
+				  	3 days ago &nbsp&nbsp  
+				  	<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+				  	<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+				  </small>
 				</div>
 				<p class="mb-1">Chili con carne, meaning 'chili with meat', is a spicy stew containing chili peppers, meat, and often tomatoes and beans. Other seasonings may include garlic, onions, and cumin. The dish originated in northern Mexico or southern Texas</p>
 				<small class="text-muted">Quantity: 80 servings, Calories: 30</small>
@@ -52,12 +70,78 @@
 			<a href="#" class="list-group-item list-group-item-action">
 				<div class="d-flex w-100 justify-content-between">
 				  <h5 class="mb-1">Soy Tofu</h5>
-				  <small class="text-muted">3 days ago &nbsp&nbsp  <button type="button" class="btn btn-light">Reorder</button></small>
+				  <small class="text-muted">
+				  	3 days ago &nbsp&nbsp  
+				  	<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+				  	<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+				  </small>
+
 				</div>
 				<p class="mb-1">Tofu, also known as bean curd is a food prepared by coagulating soy milk and then pressing the resulting curds into solid white blocks of varying softness; it can be silken, soft, firm, or extra firm. Beyond these broad categories, there are many varieties of tofu</p>
 				<small class="text-muted">Quantity: 80 servings, Calories: 30</small>
 			</a>
 		</div>
+		<hr>
+		<div class="container well">
+			<h2>Add Food</h2>
+			<form>
+			  <div class="form-group">
+			    <label for="exampleFormControlInput1">Food Name</label>
+			    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="food name">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleFormControlSelect1">Quantity</label>
+			    <select class="form-control" id="exampleFormControlSelect1">
+			      <option>1</option>
+			      <option>2</option>
+			      <option>3</option>
+			      <option>4</option>
+			      <option>5</option>
+			    </select>
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleFormControlTextarea1">Description</label>
+			    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			  </div>
+			</form>
+			<button class="btn btn-primary" onclick="create()">Create</button>
+		</div>
 
+		<br>
+
+		<script type="text/javascript">
+		    function reorder(){
+  				location.href = "http://www.instacart.com";
+			}
+
+		    function remove(elem){
+  				elem.parentNode.parentNode.parentNode.remove();
+			}
+
+			function create() {
+				//Create the element using the createElement method.
+				var food = document.getElementById("exampleFormControlInput1").value;
+				var quantity = document.getElementById("exampleFormControlSelect1").value;
+				var description = document.getElementById("exampleFormControlTextarea1").value;
+				var element = document.getElementById("1212");
+				//Set its unique ID.
+				var bla = "<a href='#' class='list-group-item list-group-item-action'><div class='d-flex w-100 justify-content-between'><h5 class='mb-1'>";
+				bla += food;
+				bla += "</h5> <small class='text-muted'> 3 days ago &nbsp&nbsp <button onclick='reorder()' type='button' class='btn btn-light'>Reorder</button><button onclick='remove(this)' type='button' class='btn btn-light'>Remove</button></small></div><p class='mb-1'>";
+				bla += description;
+				bla += "</p> <small class='text-muted'>Quantity:" + quantity + " servings, Calories: 30</small></a>";
+				 
+				//Finally, append the element to the HTML body
+				//document.body.getElementById("foodcontent").appendChild(myA);
+				element.insertAdjacentHTML('beforeend', bla);
+				//element.style.display = "none";
+				//document.getElementById("foodcontent").appendChild()
+// "<a href='#' class='list-group-item list-group-item-action'><div class='d-flex w-100 justify-content-between'><h5 class='mb-1'>Soy Tofu</h5> <small class='text-muted'> 3 days ago &nbsp&nbsp <button onclick='reorder()' type='button' class='btn btn-light'>Reorder</button><button onclick='remove(this)' type='button' class='btn btn-light'>Remove</button></small></div><p class='mb-1'>Tofu, also known as bean curd is a food prepared by coagulating soy milk and then pressing the resulting curds into solid white blocks of varying softness; it can be silken, soft, firm, or extra firm. Beyond these broad categories, there are many varieties of tofu</p> <small class='text-muted'>Quantity: 80 servings, Calories: 30</small></a>"
+			}
+
+		</script>
 	</body>
+
+
+
 </html>

@@ -13,34 +13,71 @@
 			<ul class="list-group">
 				<li class="list-group-item d-flex justify-content-between align-items-center">
 					Whole Milk and Organic!
-					<span class="badge badge-primary badge-pill">exp. 10/31/20</span>
+				  <small class="text-muted">
+				  	exp. 10/31/20 &nbsp&nbsp  
+				  	<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+				  	<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+				  </small>
 				</li>
 				<li class="list-group-item d-flex justify-content-between align-items-center">
 					Nake Juice Green Machine
-					<span class="badge badge-primary badge-pill">exp. 11/4/20</span>
+					<small class="text-muted">
+						exp. 11/4/20 &nbsp&nbsp  
+						<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+						<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+					</small>
 				</li>
 				<li class="list-group-item d-flex justify-content-between align-items-center">
 					Diet Coke
-					<span class="badge badge-primary badge-pill">exp. 11/10/20</span>
+					<small class="text-muted">
+						exp. 11/10/20 &nbsp&nbsp  
+						<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+						<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+					</small>
 				</li>
 				<li class="list-group-item d-flex justify-content-between align-items-center">
 					Turkey Breast Thin Sliced
-					<span class="badge badge-primary badge-pill">exp. 11/12/20</span>
+					<small class="text-muted">
+						exp. 11/12/20 &nbsp&nbsp  
+						<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+						<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+					</small>
 				</li>
 				<li class="list-group-item d-flex justify-content-between align-items-center">
 					Lettuce
-					<span class="badge badge-primary badge-pill">exp. 11/12/20</span>
+					<small class="text-muted">
+						exp. 11/12/20 &nbsp&nbsp  
+						<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+						<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+					</small>
 				</li>
 				<li class="list-group-item d-flex justify-content-between align-items-center">
 					Jalepenos
-					<span class="badge badge-primary badge-pill">exp. 11/15/20</span>
+					<small class="text-muted">
+						exp. 11/15/20 &nbsp&nbsp  
+						<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+						<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+					</small>
 				</li>
 				<li class="list-group-item d-flex justify-content-between align-items-center">
 					Watermelon
-					<span class="badge badge-primary badge-pill">exp. 11/20/20</span>
+					<small class="text-muted">
+						exp. 10/31/20 &nbsp&nbsp  
+						<button onclick="reorder()" type="button" class="btn btn-light">Reorder</button>
+						<button onclick="remove(this)" type="button" class="btn btn-light">Remove</button>
+					</small>
 				</li>
 			</ul>
 		</div>
 
+		<script type="text/javascript">
+		    function reorder(){
+  				location.href = "http://www.instacart.com";
+			}
+
+		    function remove(elem){
+  				elem.parentNode.parentNode.remove();
+			}
+		</script>
 	</body>
 </html>
