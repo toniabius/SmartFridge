@@ -13,3 +13,6 @@
       function openSetting() {
          window.open("../setting/setting.html", "_self");
       }
+      function openGroceryList() {
+        window.open("../")
+      }
