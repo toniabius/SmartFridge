@@ -1,0 +1,78 @@
+div.row {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -400px;
+    height: 300px;
+    width: 800px;
+}
+
+div.col {
+    float: left;
+    width: 49%;
+    height: 100%;
+}
+
+#split {
+    width: 1%;
+}
+
+#temp-container {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#pro-container {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    position: relative;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+button.temp {
+    float: left;
+    font-size: 2em;
+}
+
+div.profile {
+    float: left;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+img.profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#new-profile {
+    margin: 0;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
