@@ -9,8 +9,8 @@
     <title>HOMEPAGE</title>
     <link rel="stylesheet" type="text/css" href="../keyboard/jQKeyboard.css" />
     <link rel="stylesheet" type="text/css" href="../keyboard/keyin.css" />
-    <link rel="stylesheet" type="text/css" href="../home/nav.css" />
-    <link rel="stylesheet" type="text/css" href="../home/inventorytable.css" />
+    <link rel="stylesheet" type="text/css" href="nav.css" />
+    <link rel="stylesheet" type="text/css" href="inventorytable.css" />
 
     <script
       type="text/javascript"
@@ -38,118 +38,124 @@
   </head>
 
   <body>
-    <div class="inventory-container">
-      <h1 id="inventory">Inventory</h1>
-      <div class="table-body">
-        <table>
-          <tbody>
-            <tr>
-              <td class="food">Spinach</td>
-              <td class="qty">1</td>
-            </tr>
-            <tr>
-              <td class="food">Avocado</td>
-              <td class="qty">3</td>
-            </tr>
-            <tr>
-              <td class="food">Porkchop</td>
-              <td class="qty">3</td>
-            </tr>
-            <tr>
-              <td class="food">Grapes</td>
-              <td class="qty">2</td>
-            </tr>
-            <tr>
-              <td class="food">Eggs</td>
-              <td class="qty">12</td>
-            </tr>
-            <tr>
-              <td class="food">OJ</td>
-              <td class="qty">1</td>
-            </tr>
-            <tr>
-              <td class="food">Milk</td>
-              <td class="qty">1</td>
-            </tr>
-            <tr>
-              <td class="food">a</td>
-              <td class="qty">3</td>
-            </tr>
-            <tr>
-              <td class="food">b</td>
-              <td class="qty">2</td>
-            </tr>
-            <tr>
-              <td class="food">c</td>
-              <td class="qty">1</td>
-            </tr>
-          </tbody>
-        </table>
+    <div id="tablet-size">
+      <div class="inventory-container">
+        <h1 id="inventory">Inventory</h1>
+        <div class="table-body">
+          <table>
+            <tbody>
+              <tr>
+                <td class="food">Spinach</td>
+                <td class="qty">1</td>
+              </tr>
+              <tr>
+                <td class="food">Avocado</td>
+                <td class="qty">3</td>
+              </tr>
+              <tr>
+                <td class="food">Porkchop</td>
+                <td class="qty">3</td>
+              </tr>
+              <tr>
+                <td class="food">Grapes</td>
+                <td class="qty">2</td>
+              </tr>
+              <tr>
+                <td class="food">Eggs</td>
+                <td class="qty">12</td>
+              </tr>
+              <tr>
+                <td class="food">OJ</td>
+                <td class="qty">1</td>
+              </tr>
+              <tr>
+                <td class="food">Milk</td>
+                <td class="qty">1</td>
+              </tr>
+              <tr>
+                <td class="food">a</td>
+                <td class="qty">3</td>
+              </tr>
+              <tr>
+                <td class="food">b</td>
+                <td class="qty">2</td>
+              </tr>
+              <tr>
+                <td class="food">c</td>
+                <td class="qty">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="inventory-form">
+        <form action="PayslipServlet" method="get">
+          <div class="foodinputbox">
+            <input
+              type="text"
+              id="foodinput"
+              class="jQKeyboard"
+              placeholder="Food"
+            />
+          </div>
+          <div class="quantityinputbox">
+            <input
+              type="text"
+              id="quantityinput"
+              class="jQKeyboard"
+              placeholder="Qty"
+            />
+          </div>
+          <input
+            type="button"
+            class="button removebutton"
+            value="&#8722;"
+            onClick="remove()"
+          />
+          <input
+            type="button"
+            class="button addbutton"
+            value="&#43;"
+            onClick="add()"
+          />
+        </form>
+      </div>
+
+      <div id="nav">
+        <form>
+          <input
+            type="button"
+            class="button backNav"
+            value="BACK"
+            onclick="back()"
+          />
+          <input
+            type="button"
+            class="button orderNav"
+            value="ORDER"
+            onclick="openOrder()"
+          />
+          <input
+          type="button"
+          class="button homeNav"
+          value="HOME"
+          onclick="openHome()"
+          />
+          <input
+            type="button"
+            class="button recipeNav"
+            value="RECIPE"
+            onclick="openRecipe()"
+          />
+          <input
+            type="button"
+            class="button settingNav"
+            value="SETTING"
+            onclick="openSetting()"
+          />
+        </form>
       </div>
     </div>
-
-    <form action="PayslipServlet" method="get">
-      <div class="foodinputbox">
-        <input
-          type="text"
-          id="foodinput"
-          class="jQKeyboard"
-          placeholder="Food"
-        />
-      </div>
-      <div class="quantityinputbox">
-        <input
-          type="text"
-          id="quantityinput"
-          class="jQKeyboard"
-          placeholder="Quantity"
-        />
-      </div>
-      <input
-        type="button"
-        class="button addbutton"
-        value="ADD"
-        onClick="add()"
-      />
-      <input
-        type="button"
-        class="button removebutton"
-        value="REMOVE"
-        onClick="remove()"
-      />
-    </form>
-
-    <form>
-      <input
-        type="button"
-        class="button backNav"
-        value="BACK"
-        onclick="back()"
-      />
-      <input
-        type="button"
-        class="button homeNav"
-        value="HOME"
-        onclick="openHome()"
-      />
-      <input
-        type="button"
-        class="button orderNav"
-        value="ORDER"
-        onclick="openOrder()"
-      />
-      <input
-        type="button"
-        class="button recipeNav"
-        value="RECIPE"
-        onclick="openRecipe()"
-      />
-      <input
-        type="button"
-        class="button settingNav"
-        value="SETTING"
-        onclick="openSetting()"
-      />
-    </form>
   </body>
 </html>

@@ -14,63 +14,69 @@
     <script type="text/javascript" src="../home/nav.js"></script>
 
   </head>
-  <div class = "ingredient-container">
-    <center> <h1 id = "ingredient-order"> Ingredients to Order </h1> </center>
-    <div class ="order-body">
-      <h4 id = "ttle"> Recent Ingredients used in Recipes </h4>
-      <input type= "checkbox" id = "food1" name ="food1" value = "Cucumbers">
-      <label for = "food1"> Cucumbers </label> <br>
-      <input type= "checkbox" id = "food2" name ="food2" value = "Strawberries">
-      <label for = "food2"> Strawberries </label> <br>
-      <input type= "checkbox" id = "food3" name ="food3" value = "Cheese">
-      <label for = "food2"> Cheese </label> <br>
-      <input type= "checkbox" id = "food4" name ="food4" value = "Ham">
-      <label for = "food2"> Ham </label> <br>
-      <input type= "checkbox" id = "food5" name ="food5" value = "Bread">
-      <label for = "food2"> Bread </label> <br>
-
-    </div>
-
-    <input
-      type="button"
-      class="button addbutton"
-      value="Checkout"
-      onClick="add()"
-    />
-    <center><button type="button"> Checkout! </button></center>
 
   <body>
-    <form>
-      <input
-        type="button"
-        class="button backNav"
-        value="BACK"
-        onclick="back()"
-      />
-      <input
-        type="button"
-        class="button homeNav"
-        value="HOME"
-        onclick="openHome()"
-      />
-      <input
-        type="button"
-        class="button orderNav"
-        value="ORDER"
-        onclick="openOrder()"
-      />
-      <input
-        type="button"
-        class="button recipeNav"
-        value="RECIPE"
-        onclick="openRecipe()"
-      />
-      <input
-        type="button"
-        class="button settingNav"
-        value="SETTING"
-        onclick="openSetting()"
-      />
-    </form>
+    <div id="tablet-size">
+      <div class = "ingredient-container">
+        <center> <h1 id = "ingredient-order"> Ingredients to Order </h1> </center>
+        <div class ="order-body">
+          <h4 id = "ttle"> Recent Ingredients used in Recipes </h4>
+          <input type= "checkbox" id = "food1" name ="food1" value = "Cucumbers">
+          <label for = "food1"> Cucumbers </label> <br>
+          <input type= "checkbox" id = "food2" name ="food2" value = "Strawberries">
+          <label for = "food2"> Strawberries </label> <br>
+          <input type= "checkbox" id = "food3" name ="food3" value = "Cheese">
+          <label for = "food2"> Cheese </label> <br>
+          <input type= "checkbox" id = "food4" name ="food4" value = "Ham">
+          <label for = "food2"> Ham </label> <br>
+          <input type= "checkbox" id = "food5" name ="food5" value = "Bread">
+          <label for = "food2"> Bread </label> <br>
+
+        </div>
+
+        <input
+          type="button"
+          class="button addbutton"
+          value="Checkout"
+          onClick="add()"
+        />
+        <center><button type="button"> Checkout! </button></center>
+      </div>
+
+      <div id="nav">
+        <form>
+          <input
+            type="button"
+            class="button backNav"
+            value="BACK"
+            onclick="back()"
+          />
+          <input
+            type="button"
+            class="button orderNav"
+            value="ORDER"
+            onclick="openOrder()"
+          />
+          <input
+          type="button"
+          class="button homeNav"
+          value="HOME"
+          onclick="openHome()"
+          />
+          <input
+            type="button"
+            class="button recipeNav"
+            value="RECIPE"
+            onclick="openRecipe()"
+          />
+          <input
+            type="button"
+            class="button settingNav"
+            value="SETTING"
+            onclick="openSetting()"
+          />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
