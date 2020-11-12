@@ -1,15 +1,15 @@
       function back() {
-        window.open("");
+        window.open("", "_self");
       }
       function openHome() {
-        window.open("../home/homepage.html");
+        window.open("../home/homepage.html", "_self");
       }
       function openOrder() {
-        window.open("../order/order.html");
+        window.open("../order/order.html", "_self");
       }
       function openRecipe() {
-        window.open("../recipe/recipe.html");
+        window.open("../recipe/recipe.html", "_self");
       }
       function openSetting() {
-        window.open("../setting/setting.html");
+        window.open("../setting/setting.html", "_self");
       }
