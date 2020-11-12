@@ -36,7 +36,7 @@ window.onload = function(){
     modalBtn.onclick = function() {
         document.getElementById("createProfileModal").style.display = "block";
     };
-    
+
     let closeBtns = [...document.querySelectorAll(".close")];
     closeBtns.forEach(function(btn) {
         btn.onclick = function() {
@@ -44,7 +44,7 @@ window.onload = function(){
             modal.style.display = "none";
         }
     });
-    
+
     window.onclick = function(event) {
         if(event.target.className === "modal") {
             event.target.style.display = "none";
@@ -67,4 +67,4 @@ function openRecipe() {
 }
 function openSetting() {
     window.open("../setting/setting.html", "_self");
-}
+} 
