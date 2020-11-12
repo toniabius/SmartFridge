@@ -1,5 +1,5 @@
-      function back() {
-        window.open("", "_self");
+      function openGroceryList() {
+        window.open("../grocery/grocery.html", "_self");
       }
       function openHome() {
         window.open("../home/homepage.html", "_self");
