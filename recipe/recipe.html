@@ -8,15 +8,23 @@
     />
     <title>RECIPE</title>
 
+    <link rel="stylesheet" type="text/css" href="../home/top-bar.css" />
     <link rel="stylesheet" type="text/css" href="../home/nav.css" />
     <link rel="stylesheet" type="text/css" href="../recipe/recipe.css" />
 
+    <script type="text/javascript" src="../home/top-bar.js"></script>
     <script type="text/javascript" src="../home/nav.js"></script>
     <script type="text/javascript" src="../recipe/recipe.js"></script>
   </head>
 
   <body>
     <div id="tablet-size">
+
+      <div id="top-bar">
+        <span id="top-date"></span>
+        <span id="sf">SMART FRIDGE</span>
+      </div>
+      
       <div class="recipe-container">
         <h1 id="recipe">Vegan Sweet Potato Soup</h1>
         <div class="recipe-body">
@@ -102,7 +110,7 @@
           <input
             type="button"
             class="button settingNav"
-            value="SETTING"
+            value="SETTINGS"
             onclick="openSetting()"
           />
         </form>

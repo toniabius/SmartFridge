@@ -13,9 +13,6 @@
       function openSetting() {
          window.open("../setting/setting.html", "_self");
       }
-      function openGroceryList() {
-        window.open("../order/grocery.html","_self");
-      }
       function checkout(){
         window.open("../order/checkout.html","_self");
       }

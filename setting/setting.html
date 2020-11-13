@@ -6,11 +6,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>SETTING</title>
+    <title>SETTINGS</title>
 
+    <link rel="stylesheet" type="text/css" href="../home/top-bar.css" />
     <link rel="stylesheet" type="text/css" href="../home/nav.css" />
     <link rel="stylesheet" type="text/css" href="../setting/setting.css" />
 
+    <script type="text/javascript" src="../home/top-bar.js"></script>
     <script type="text/javascript" src="setting.js"></script>
     <script type="text/javascript" src="../home/nav.js"></script>
   </head>
@@ -18,8 +20,15 @@
   <body>
 
     <div id="tablet-size">
+
+      <div id="top-bar">
+        <span id="top-date"></span>
+        <span id="sf">SMART FRIDGE</span>
+      </div>
+      
       <div class="row">
         <div class="col" id="temp-container">
+          <div id="temp-inner">
             <h2>Refrigerator Temp</h2>
             <div class="left-inner">
                 <button class="temp" onclick="decFridge()">&#8722;</button>
@@ -32,39 +41,58 @@
                 <h1 class="temp" id="freezerTemp">0</h1><h1 class="temp">&#8457;</h1>
                 <button class="temp" onclick="incFreezer()">&#43;</button>
             </div>
+          </div>
         </div>
 
         <div class="col" id="split">&nbsp;</div>
 
         <div class="col" id="pro-container">
+          <div id="pro-inner">
             <h2>Who's Cooking?</h2>
-            <div class="right-inner">
-                  <figure>
-                    <img class="profile" src="../graphics/profile-avatar.png" alt="profile-avatar"/>
-                    <figcaption>Bob</figcaption>
-                  </figure>
-                  <figure>
-                    <img class="profile" src="../graphics/profile-avatar.png" alt="profile-avatar"/>
-                    <figcaption>Bob</figcaption>
-                  </figure>
-                <figure>
-                  <img class="newProfile" id="newProfileButton" src="../graphics/plus-sign.jpg" alt="new-profile"/>
-                  <figcaption>Create New Profile</figcaption>
-                </figure>
-              </div>
-          </div>  
+            <div class="right-inner" id="profiles">
+              <figure>
+                <img class="newProfile" id="newProfileButton" src="../graphics/plus-sign.jpg" alt="new-profile"/>
+                <figcaption>Create New Profile</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>  
       </div>
 
       <div id="createProfileModal" class="modal">
         <div class="modal-content">
           <div class="profile-creation">
             <a class="close">&times;</a>
-            <form class="profile-creation" action="/">
-              <h2>Create New Profile (INCOMPLETE)</h2>
-              <div>
-                <input class="fname" type="text" name="name" placeholder="Full name">
+            <form class="profile-creation" id="profile-form" action="/">
+              <h2>Create New Profile</h2>
+              <div id="form-container">
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name"><br/>
+
+                <label for="allergies">Allergies:</label>
+                <input id="allergies" type="text" name="allergies" placeholder="peanuts, strawberries"><br/>
+
+                <label for="name">Preferences:</label>
+                <input id="prefs" type="text" name="prefs" placeholder="vegan, gluten-free, halal"><br/>
+
+                <label for="card">Payment Method:</label>
+                <input id="card" type="text" name="card" placeholder="Valid Card Number">
+                <input id="expM" type="number" name="expM" min="1" max="12" placeholder="MM">
+                <input id="expY" type="number" name="expY" min="20" max="40" placeholder="YY">
+                <input id="cvv" type="number" name="cvv" min="0" max="9999" placeholder="CVV">
+
+                <br/><br/>
+                <label for="skill-level">Skill Level:</label>
+                <input type="radio" id="beginner" name="skill-level" value="beginner">
+                <label for="beginner">Beginner</label>
+                <input type="radio" id="intermediate" name="skill-level" value="intermediate">
+                <label for="intermediate">Intermediate</label>
+                <input type="radio" id="advanced" name="skill-level" value="advanced">
+                <label for="advanced">Advanced</label>
               </div>
-              <button type="submit" href="/">Submit</button>
+              <br/><br/><button type="button" id="submit-button" onclick="createProfile()">
+                Submit
+              </button>
             </form>
           </div>
         </div>
@@ -99,7 +127,7 @@
           <input
             type="button"
             class="button settingNav"
-            value="SETTING"
+            value="SETTINGS"
             onclick="openSetting()"
           />
         </form>

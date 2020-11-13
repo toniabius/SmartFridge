@@ -10,8 +10,14 @@
     <link rel="stylesheet" type="text/css" href="../keyboard/jQKeyboard.css" />
     <link rel="stylesheet" type="text/css" href="../keyboard/keyin.css" />
     <link rel="stylesheet" type="text/css" href="nav.css" />
+    <link rel="stylesheet" type="text/css" href="top-bar.css" />
     <link rel="stylesheet" type="text/css" href="inventorytable.css" />
 
+    <script>
+      function openFreshness() {
+        window.open("../freshness.html", "_self");
+      }
+    </script>
     <script
       type="text/javascript"
       src="../keyboard/jquery-2.1.4.min.js"
@@ -21,12 +27,20 @@
     <script type="text/javascript" src="../keyboard/keyin.js"></script>
     <script type="text/javascript" src="../home/nav.js"></script>
     <script type="text/javascript" src="../home/addremove1.js"></script>
+    <script type="text/javascript" src="../home/top-bar.js"></script>
   </head>
 
   <body>
     <div id="tablet-size">
+
+      <div id="top-bar">
+        <span id="top-date"></span>
+        <span id="sf">SMART FRIDGE</span>
+      </div>
+
       <div class="inventory-container">
         <h1 id="inventory">Inventory</h1>
+        <button type="button" id="freshness-button" onclick="openFreshness()">View by Freshness</button>
         <div class="table-body">
           <table id="invTable">
             <tbody>
@@ -51,23 +65,11 @@
                 <td class="qty">12</td>
               </tr>
               <tr>
-                <td class="food">OJ</td>
+                <td class="food">Orange Juice</td>
                 <td class="qty">1</td>
               </tr>
               <tr>
                 <td class="food">Milk</td>
-                <td class="qty">1</td>
-              </tr>
-              <tr>
-                <td class="food">a</td>
-                <td class="qty">3</td>
-              </tr>
-              <tr>
-                <td class="food">b</td>
-                <td class="qty">2</td>
-              </tr>
-              <tr>
-                <td class="food">c</td>
                 <td class="qty">1</td>
               </tr>
             </tbody>
@@ -137,7 +139,7 @@
           <input
             type="button"
             class="button settingNav"
-            value="SETTING"
+            value="SETTINGS"
             onclick="openSetting()"
           />
         </form>

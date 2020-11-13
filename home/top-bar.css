@@ -1,0 +1,16 @@
+#top-bar {
+    border: black 1px solid;
+    height: 22px;
+}
+
+#sf {
+    font-size: 20px;
+    float: right;
+}
+
+#top-date {
+    float: left;
+    left: 50%;
+    font-size: 20px;
+}
+

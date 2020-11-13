@@ -16,15 +16,23 @@
     />
     <title> Grocery List </title>
 
+    <link rel="stylesheet" type="text/css" href="../home/top-bar.css" />
     <link rel="stylesheet" type="text/css" href="../home/nav.css" />
     <link rel="stylesheet" type="text/css" href="../order/order.css" />
 
+    <script type="text/javascript" src="../home/top-bar.js"></script>
     <script type="text/javascript" src="../home/nav.js"></script>
 
   </head>
 
 <body>
   <div id = "tablet-size">
+
+    <div id="top-bar">
+      <span id="top-date"></span>
+      <span id="sf">SMART FRIDGE</span>
+    </div>
+    
     <div class = "list-container">
 
     <center> <h1 id = "ingredient-order"> Grocery List </h1> </center>
@@ -63,7 +71,7 @@
         <input
           type="button"
           class="button settingNav"
-          value="SETTING"
+          value="SETTINGS"
           onclick="openSetting()"
         />
       </form>

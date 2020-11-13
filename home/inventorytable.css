@@ -8,8 +8,14 @@ div.inventory-container {
     width: 1026px;
 }
 
+#freshness-button {
+    background-color: #f3f7fa;
+    border: 2px solid #88b6e0;
+}
+
 #inventory {
-    margin-top: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
@@ -45,7 +51,7 @@ div.inventory-container {
     border: 2px solid #88b6e0;
 }
   
-.addbutton:hover, .removebutton:hover {
+.addbutton:hover, .removebutton:hover, #freshness-button:hover {
     background-color: #88b6e0;
     color: white;
 }

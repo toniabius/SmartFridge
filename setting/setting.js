@@ -30,6 +30,20 @@ function incFreezer() {
     }
 }
 
+function createProfile() {
+    let name = document.querySelector("#name")
+    let nameVal = name.value;
+    if (nameVal.length == 0) {
+        alert("Name required")
+    } else {
+        const container = document.getElementById("profiles");
+        const profile = document.createElement("figure");
+        profile.innerHTML = `<img class="profile" src="../graphics/profile-avatar.png" alt="profile-avatar"/><figcaption>${nameVal}</figcaption>`;
+        container.insertBefore(profile, container.firstChild);
+    }
+    document.getElementById("profile-form").reset()
+}
+
 // profile creation modal
 window.onload = function(){
     let modalBtn = document.getElementById("newProfileButton")
