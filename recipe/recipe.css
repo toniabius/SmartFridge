@@ -26,8 +26,8 @@ div.left {
   position: relative;
   top: -200px;
   left: -200px;
-  width: 300px;
-  height: 500px;
+  width: 400px;
+  height: 280px;
   overflow-y: scroll;
   font-size: large;
 }
@@ -39,18 +39,40 @@ div.left {
 }
 
 div.right {
-    position: relative;
-    top: -700px;
-    right: -300px;
-    width: 300px;
-    height: 500px;
-    overflow-y: scroll;
-    font-size: large;
-  }
-  
-  #direction {
-    margin: 0;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
+  position: relative;
+  top: -480px;
+  right: -270px;
+  width: 400px;
+  height: 280px;
+  overflow-y: scroll;
+  font-size: large;
+}
+
+#direction {
+  margin: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nextrecipe {
+  position: absolute;
+  top: 560px;
+  left: 410px;
+  padding: 10px;
+  width: 200px;
+  font-size: 17px;
+  text-align: center;
+  background-color: rgb(240, 245, 248);
+  color: black;
+  border: 2px solid #88b6e0;
+}
+
+td.food {
+  border-top: 1px solid black;
+  text-align: left;
+}
+
+td.step {
+  border-top: 1px solid black;
+  text-align: left;
+}

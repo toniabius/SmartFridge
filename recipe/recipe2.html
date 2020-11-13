@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>RECIPE</title>
+
+    <link rel="stylesheet" type="text/css" href="../home/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../recipe/recipe.css" />
+
+    <script type="text/javascript" src="../home/nav.js"></script>
+    <script type="text/javascript" src="../recipe/recipe.js"></script>
+  </head>
+
+  <body>
+    <div id="tablet-size">
+      <div class="recipe-container">
+        <h1 id="recipe">Sausage, Peppers, Onions, and Potato Bake</h1>
+        <div class="recipe-body">
+          <h5 id="time">Prep:20 mins  Cook:45 mins  Total:1h 5mins</h2>
+          <h5 id="difficulty">Difficulty: Medium</h2>
+        </div>
+        <div class="left">
+          <h2 id="ingredient">Ingredients</h2>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="food">2 teaspoons olive oil</td>
+                </tr>
+                <tr>
+                  <td class="food">2 pounds Italian sausage links, cut into 2-inch pieces</td>
+                </tr>
+                <tr>
+                  <td class="food">¼ cup olive oil</td>
+                </tr>
+                <tr>
+                  <td class="food">4 large potatoes, peeled and thickly sliced</td>
+                </tr>
+                <tr>
+                  <td class="food">2 large green bell peppers, seeded and cut into wedges</td>
+                </tr>
+                <tr>
+                  <td class="food">2 large red bell peppers, seeded and cut into wedges</td>
+                </tr>
+                <tr>
+                  <td class="food">3 large onions, cut into wedges</td>
+                </tr>
+                <tr>
+                  <td class="food">½ cup white wine</td>
+                  </tr>
+                  <tr>
+                    <td class="food">½ cup chicken stock</td>
+                  </tr>
+                  <tr>
+                    <td class="food">1 teaspoon Italian seasoning</td>
+                  </tr>
+                  <tr>
+                    <td class="food">salt and pepper to taste</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        <div class="right">
+          <h2 id="direction">Directions</h2>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="step">1. Preheat oven to 400 degrees F (200 degrees C).
+                  </td>
+                </tr>
+                <tr>
+                  <td class="food">2. Heat 2 teaspoons olive oil in a large skillet over medium heat, and cook and stir the sausage until browned. Transfer the cooked sausage to a large baking dish.</td>
+                </tr>
+                <tr>
+                    <td class="food">3. Pour 1/4 cup of olive oil into the skillet, and cook the potatoes, stirring occasionally, until browned, about 10 minutes. Place the potatoes into the baking dish, leaving some oil in the skillet.</td>
+                  </tr>
+                  <tr>
+                    <td class="food">4. Cook and stir the green and red peppers and onions in the hot skillet until they are beginning to soften, about 5 minutes. Add the vegetables to the baking dish.</td>
+                  </tr>
+                  <tr>
+                    <td class="food">5. Pour wine and chicken stock over the vegetables and sausage, and sprinkle with Italian seasoning, salt, and pepper. Gently stir the sausage, potatoes, and vegetables together.</td>
+                  </tr>  
+                  <tr>
+                    <td class="food">6. Bake in the preheated oven until hot and bubbling, 20 to 25 minutes. Serve hot.
+
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+      <input
+          type="button"
+          id="nextrecipe"
+          value="NEXT RECIPE"
+          onclick="prevrecipe()"
+        />
+
+      <div id="nav">
+        <form>
+          <input
+            type="button"
+            class="button groceryNav"
+            value="GROCERY"
+            onclick="openGroceryList()"
+          />
+          <input
+            type="button"
+            class="button orderNav"
+            value="ORDER"
+            onclick="openOrder()"
+          />
+          <input
+          type="button"
+          class="button homeNav"
+          value="HOME"
+          onclick="openHome()"
+          />
+          <input
+            type="button"
+            class="button recipeNav"
+            value="RECIPE"
+            onclick="openRecipe()"
+          />
+          <input
+            type="button"
+            class="button settingNav"
+            value="SETTING"
+            onclick="openSetting()"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
