@@ -11,18 +11,14 @@ function add() {
 
     var name = $("#foodinput").val();
     var quan = $("#quantityinput").val();
-    var table = document.getElementById("invTable");
 
-    var i;
+    if ($("#invTable button[class='" + name + "']") != null) {
+      var row = $("#invTable button[class='" + name + "']").parents("tr")[0];
 
-    for (i = 0; i < table.rows.length; i++) {
-      var content = table.rows[i].cells[0];
-      if (content.localeCompare(name) == 0) {
-        quan += parseInt(table.rows[i].cells[1].val());
-        break;
-      }
+      quan += parseInt($(row).cells[1].innerText);
+
+      $(row).remove();
     }
-    $("#invTable").deleteRow(i);
 
     addAux(name, quan);
     clearForm();
@@ -41,28 +37,18 @@ function remove() {
     }
     var name = $("#foodinput").val();
     var quan = $("#quantityinput").val();
-
-    var i;
-    var found = false;
     var oriquan;
-    var table = document.getElementById("invTable");
 
-    for (i = 0; i < table.rows.length; i++) {
-      var content = table.rows[i].cells[0];
-      if (content.localeCompare(name) == 0) {
-        oriQuan = parseInt(table.rows[i].cells[1].val());
-        found = true;
-        break;
-      }
-    }
+    if ($("#invTable button[class='" + name + "']") != null) {
+      var row = $("#invTable button[class='" + name + "']").parents("tr")[0];
 
-    if (found) {
-      quan = oriquan - quan;
+      oriQuan = parseInt(table.rows[i].cells[1].val());
 
-      table.deleteRow(i);
+      $(row).remove();
 
+      var diff = oriquan - quan;
       if (diff > 0) {
-        addAux(name, quan);
+        addAux(name, diff);
         clearForm();
       }
     }
