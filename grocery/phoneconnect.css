@@ -12,6 +12,11 @@ div.list-container {
   width: 450px;
 }
 
+ul li{
+  position:relative;
+  padding:12px 8px 12px 40px;
+  background:
+}
 textarea{
   background: #FFFF00;
   resize: none;

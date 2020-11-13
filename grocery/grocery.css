@@ -1,0 +1,111 @@
+body {
+  background: #daedf5;
+}
+
+div.inventory-container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -513px;
+    height: 600px;
+    width: 1026px;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  padding: 10px;
+}
+
+ul li{
+  position:relative;
+  font-size: 18px;
+}
+
+.addBtn {
+  padding: 10px;
+  font-size: 18px;
+  background: #d9d9d9;
+  cursor: pointer;
+}
+
+
+#inventory {
+    margin-top: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+#inventory-form {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    height: 250px;
+    width: 400px;
+}
+
+#foodinput {
+    width: 300px;
+}
+
+#quantityinput {
+    width: 75px;
+}
+
+#quantityinput::placeholder {
+    text-align: center;
+}
+
+.addbutton, .removebutton {
+    padding: 0;
+    width: 75px;
+    font-size: 40px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 2px solid #88b6e0;
+}
+
+.addbutton:hover, .removebutton:hover {
+    background-color: #88b6e0;
+    color: white;
+}
+
+div.table-body {
+    overflow-y: scroll;
+    margin-top: 5px;
+    margin-left: 450px;
+    height: 500px;
+    width: 500px;
+}
+
+td {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td.food {
+    width: 350px;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-top: 1px solid black;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+td.qty {
+    width: 150px;
+    border-top: 1px solid black;
+    font-size: 40px;
+    text-align: center;
+}
