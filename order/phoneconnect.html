@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main-home.css" type="text/css" />
-    <title>SmartFridge Mate Phone App</title>
+<html>
+  <head>
+    <style>
+    textarea{
+      background: #FFFFE0;
+      resize: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title> Grocery List </title>
 
     <link rel="stylesheet" type="text/css" href="../home/nav.css" />
-    <link rel="stylesheet" type="text/css" href="../order/phoneconnect.css" />
+    <link rel="stylesheet" type="text/css" href="../order/order.css" />
 
-</head>
+    <script type="text/javascript" src="../home/nav.js"></script>
+
+  </head>
 
 <body>
-  
+  <div id = "tablet-size">
+    <div class = "list-container">
+
     <center> <h1 id = "ingredient-order"> Grocery List </h1> </center>
+    <textarea name="message" rows="30" cols="100">
 
+    </textarea>
 
-      <!-- <form>
+  </div>
+
+    <div id="nav">
+      <form>
         <input
           type="button"
-          class="button backNav"
-          value="BACK"
-          onclick="back()"
-        />
-        <input
-          type="button"
-          class="button homeNav"
-          value="HOME"
-          onclick="openHome()"
+          class="button groceryNav"
+          value="GROCERY"
+          onclick="openGroceryList()"
         />
         <input
           type="button"
           class="button orderNav"
           value="ORDER"
           onclick="openOrder()"
+        />
+        <input
+        type="button"
+        class="button homeNav"
+        value="HOME"
+        onclick="openHome()"
         />
         <input
           type="button"
@@ -47,6 +66,8 @@
           value="SETTING"
           onclick="openSetting()"
         />
-      </form> -->
+      </form>
+    </div>
+  </div>
 </body>
 </html>
