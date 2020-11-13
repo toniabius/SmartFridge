@@ -38,7 +38,7 @@ function createProfile() {
     } else {
         const container = document.getElementById("profiles");
         const profile = document.createElement("figure");
-        profile.innerHTML = `<img class="profile" src="../graphics/profile-avatar.png" alt="profile-avatar"/><figcaption>${nameVal}</figcaption>`;
+        profile.innerHTML = `<img class="profile" src="/graphics/profile-avatar.png" alt="profile-avatar"/><figcaption>${nameVal}</figcaption>`;
         container.insertBefore(profile, container.firstChild);
     }
     document.getElementById("profile-form").reset()
