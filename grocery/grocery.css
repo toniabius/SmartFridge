@@ -29,6 +29,12 @@ ul li{
   font-size: 18px;
 }
 
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
 .addBtn {
   padding: 10px;
   font-size: 18px;
