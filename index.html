@@ -13,26 +13,16 @@
     <link rel="stylesheet" type="text/css" href="home/top-bar.css" />
     <link rel="stylesheet" type="text/css" href="home/inventorytable.css" />
 
-    <script>
-      function openFreshness() {
-        window.open("freshness.html", "_self");
-      }
-    </script>
-    <script
-      type="text/javascript"
-      src="keyboard/jquery-2.1.4.min.js"
-    ></script>
+    <script type="text/javascript" src="keyboard/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="keyboard/jQKeyboard.js"></script>
     <script type="text/javascript" src="keyboard/keyboardfunc.js"></script>
     <script type="text/javascript" src="keyboard/keyin.js"></script>
     <script type="text/javascript" src="home/nav.js"></script>
-    <script type="text/javascript" src="home/addremove1.js"></script>
     <script type="text/javascript" src="home/top-bar.js"></script>
   </head>
 
   <body>
     <div id="tablet-size">
-
       <div id="top-bar">
         <span id="top-date"></span>
         <span id="sf">SMART FRIDGE</span>
@@ -40,7 +30,9 @@
 
       <div class="inventory-container">
         <h1 id="inventory">Inventory</h1>
-        <button type="button" id="freshness-button" onclick="openFreshness()">View by Freshness</button>
+        <button type="button" id="freshness-button" onclick="openFreshness()">
+          View by Freshness
+        </button>
         <div class="table-body">
           <table id="invTable">
             <tbody>
@@ -78,7 +70,7 @@
       </div>
 
       <div id="inventory-form">
-        <form action="PayslipServlet" method="get">
+        <form autocomplete="off">
           <div class="foodinputbox">
             <input
               type="text"
@@ -87,6 +79,8 @@
               placeholder="Food"
             />
           </div>
+        </form>
+        <form autocomplete="off">
           <div class="quantityinputbox">
             <input
               type="text"
@@ -95,20 +89,23 @@
               placeholder="Qty"
             />
           </div>
-          <input
-            type="button"
-            class="button removebutton"
-            value="&#8722;"
-            onclick="remove()"
-          />
-          <input
-            type="button"
-            class="button addbutton"
-            value="&#43;"
-            onclick="add()"
-          />
         </form>
+        <input
+          type="button"
+          class="button removebutton"
+          value="&#8722;"
+          onclick="remove()"
+        />
+        <script type="text/javascript" src="../home/addremove.js"></script>
+
+        <input
+          type="button"
+          class="button addbutton"
+          value="&#43;"
+          onclick="add()"
+        />
       </div>
+      <script type="text/javascript" src="../home/autocomplete.js"></script>
 
       <div id="nav">
         <form>
@@ -116,31 +113,31 @@
             type="button"
             class="button groceryNav"
             value="GROCERY"
-            onclick="openGroceryList()"
+            onclick="window.open('grocery/grocery.html', '_self')"
           />
           <input
             type="button"
             class="button orderNav"
             value="ORDER"
-            onclick="openOrder()"
+            onclick="window.open('order/order.html', '_self')"
           />
           <input
             type="button"
             class="button homeNav"
             value="HOME"
-            onclick="openHome()"
+            onclick="window.open('home/homepage.html', '_self')"
           />
           <input
             type="button"
             class="button recipeNav"
             value="RECIPE"
-            onclick="openRecipe()"
+            onclick="window.open('recipe/recipe.html', '_self')"
           />
           <input
             type="button"
             class="button settingNav"
             value="SETTINGS"
-            onclick="openSetting()"
+            onclick="window.open('setting/setting.html', '_self')"
           />
         </form>
       </div>

@@ -3,18 +3,18 @@ body {
 }
 
 div.inventory-container {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    margin-top: -250px;
-    margin-left: -513px;
-    height: 600px;
-    width: 1026px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -513px;
+  height: 600px;
+  width: 1026px;
 }
 
-ul{
-  margin:0;
-  padding:0;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 input {
@@ -24,8 +24,8 @@ input {
   padding: 10px;
 }
 
-ul li{
-  position:relative;
+ul li {
+  position: relative;
   font-size: 18px;
 }
 

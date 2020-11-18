@@ -1,84 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta
-    charset="utf-8"
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
     />
-    <title> Grocery List </title>
+    <title>Grocery List</title>
 
-    <link rel="stylesheet" type="text/css" href="/home/top-bar.css" />
-    <link rel="stylesheet" type="text/css" href="/home/nav.css" />
-    <link rel="stylesheet" type="text/css" href="/order/order.css" />
-    <link rel="stylesheet" type="text/css" href="/grocery/grocery.css" />
+    <link rel="stylesheet" type="text/css" href="../home/top-bar.css" />
+    <link rel="stylesheet" type="text/css" href="../home/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../order/order.css" />
+    <link rel="stylesheet" type="text/css" href="../grocery/grocery.css" />
 
-    <script type="text/javascript" src="/home/top-bar.js"></script>
-    <script type="text/javascript" src="/home/nav.js"></script>
-    <script type="text/javascript" src="/grocery/grocery.js"></script>
+    <script type="text/javascript" src="../home/top-bar.js"></script>
+    <script type="text/javascript" src="../home/nav.js"></script>
+    <script type="text/javascript" src="../grocery/grocery.js"></script>
+  </head>
 
-</head>
+  <body>
+    <div id="tablet-size">
+      <div id="top-bar">
+        <span id="top-date"></span>
+        <span id="sf">SMART FRIDGE</span>
+      </div>
 
-<body>
-  <div id = "tablet-size">
+      <div class="inventory-container">
+        <h1 id="inventory">Grocery List</h1>
+        <input type="text" id="myInput" placeholder="Food to Add..." />
+        <span onclick="newElement()" class="addBtn">Add</span>
 
-    <div id="top-bar">
-      <span id="top-date"></span>
-      <span id="sf">SMART FRIDGE</span>
+        <ul id="myGL">
+          <li>Spinach</li>
+          <li class="checked">Cookies</li>
+          <li>Apples</li>
+          <li>Oranges</li>
+          <li>Grapes</li>
+        </ul>
+      </div>
+
+      <div id="nav">
+        <form>
+          <input
+            type="button"
+            class="button groceryNav"
+            value="GROCERY"
+            onclick="openGroceryList()"
+          />
+          <input
+            type="button"
+            class="button orderNav"
+            value="ORDER"
+            onclick="openOrder()"
+          />
+          <input
+            type="button"
+            class="button homeNav"
+            value="HOME"
+            onclick="openHome()"
+          />
+          <input
+            type="button"
+            class="button recipeNav"
+            value="RECIPE"
+            onclick="openRecipe()"
+          />
+          <input
+            type="button"
+            class="button settingNav"
+            value="SETTINGS"
+            onclick="openSetting()"
+          />
+        </form>
+      </div>
     </div>
-
-    <div class="inventory-container">
-      <h1 id="inventory">Grocery List </h1>
-      <input type="text" id="myInput" placeholder="Food to Add...">
-      <span onclick="newElement()" class ="addBtn">Add</span>
-
-      <ul id="myGL">
-        <li> Spinach </li>
-        <li class ="checked"> Cookies </li>
-        <li> Apples </li>
-        <li> Oranges </li>
-        <li> Grapes </li>
-
-      </ul>
-
-    </div>
-
-
-
-    <div id="nav">
-      <form>
-        <input
-          type="button"
-          class="button groceryNav"
-          value="GROCERY"
-          onclick="openGroceryList()"
-        />
-        <input
-          type="button"
-          class="button orderNav"
-          value="ORDER"
-          onclick="openOrder()"
-        />
-        <input
-        type="button"
-        class="button homeNav"
-        value="HOME"
-        onclick="openHome()"
-        />
-        <input
-          type="button"
-          class="button recipeNav"
-          value="RECIPE"
-          onclick="openRecipe()"
-        />
-        <input
-          type="button"
-          class="button settingNav"
-          value="SETTINGS"
-          onclick="openSetting()"
-        />
-      </form>
-    </div>
-  </div>
-</body>
+  </body>
 </html>

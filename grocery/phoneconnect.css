@@ -12,13 +12,12 @@ div.list-container {
   width: 450px;
 }
 
-ul li{
-  position:relative;
-  padding:12px 8px 12px 40px;
-  background:
+ul li {
+  position: relative;
+  padding: 12px 8px 12px 40px;
 }
-textarea{
-  background: #FFFF00;
+textarea {
+  background: #ffff00;
   resize: none;
   font-family: Arial, Helvetica, sans-serif;
 }
