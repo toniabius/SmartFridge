@@ -12,7 +12,7 @@ function add() {
     var name = $("#foodinput").val().toUpperCase();
     var quan = $("#quantityinput").val();
     var table = document.getElementById("invTable");
-
+    var found = false;
     var i;
 
     for (i = 0; i < table.rows.length; i++) {
@@ -21,11 +21,13 @@ function add() {
 
       if (currfood.localeCompare(name) == 0) {
         quan = parseInt(quan) + parseInt(table.rows[i].cells[1].innerHTML);
+        found=true;
         break;
       }
     }
+    if(found){
     table.deleteRow(i);
-
+    }
     addAux(name, quan);
     clearForm();
   }
@@ -72,6 +74,7 @@ function remove() {
         addAux(name, quan);
       }
     }
+    alert("failed!");
   }
   clearForm();
 }
